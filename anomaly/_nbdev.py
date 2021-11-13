@@ -3,7 +3,8 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"f1score": "00_utils.ipynb",
-         "df_preproc": "00_utils.ipynb"}
+         "df_preproc": "00_utils.ipynb",
+         "load_data": "00_utils.ipynb"}
 
 modules = ["utils.py"]
 
