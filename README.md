@@ -25,8 +25,12 @@ Fill me in please! Don't forget code examples:
 
 
 ```python
-einsundeins()
+f1score([1,2,3], [1,2,5,10,12])
 ```
 
-    2
+
+
+
+    (0.5, 2, 3, 5)
+
 
