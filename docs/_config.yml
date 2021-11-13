@@ -1,4 +1,4 @@
-repository: {user}/{lib_name}
+repository: roninio1/anomaly
 output: web
 topnav_title: {lib_name}
 site_title: {lib_name}
