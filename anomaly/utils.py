@@ -38,8 +38,7 @@ def f1score(truth, classified):
 
 # Cell
 def df_preproc (df):
-    'Prepocesses the df to be ready for Anomaly Detection'
-    'it will add "start" and "end" eventsto every trace'
+    'Prepocesses the df to be ready for Anomaly Detection it will add start and end eventsto every trace'
     df['event_id']= df.index
     df.index = df['trace_id']
     df = df[["event_id", "activity", "trace_id"]]
