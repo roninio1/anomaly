@@ -2,9 +2,10 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"einsundeins": "00_core.ipynb"}
+index = {"f1score": "00_utils.ipynb",
+         "df_preproc": "00_utils.ipynb"}
 
-modules = ["core.py"]
+modules = ["utils.py"]
 
 doc_url = "https://{user}.github.io/anomaly/"
 

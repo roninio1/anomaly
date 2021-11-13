@@ -10,8 +10,8 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
-      url: core.html
+      title: Utils
+      url: utils.html
     output: web
     title: anomaly
   output: web

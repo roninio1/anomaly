@@ -1,6 +1,6 @@
 {
   "anomaly": {
     "Overview": "/",
-    "module name here": "core.html"
+    "Utils": "utils.html"
   }
 }
