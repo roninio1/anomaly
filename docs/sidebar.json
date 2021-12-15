@@ -1,6 +1,8 @@
 {
   "anomaly": {
     "Overview": "/",
-    "Utils": "utils.html"
+    "Utils": "utils.html",
+    "Binet": "binet.html",
+    "Analyze": "analyze.html"
   }
 }

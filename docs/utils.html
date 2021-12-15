@@ -53,10 +53,374 @@ nb_path: "00_utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="f1score" class="doc_header"><code>f1score</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L17" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>f1score</code>(<strong><code>truth</code></strong>, <strong><code>classified</code></strong>)</p>
+<h4 id="f1score" class="doc_header"><code>f1score</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L23" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>f1score</code>(<strong><code>truth</code></strong>, <strong><code>classified</code></strong>)</p>
 </blockquote>
 <p>Calculates F1 score given a list of the truth and classified values</p>
 
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="df_preproc" class="doc_header"><code>df_preproc</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L46" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>df_preproc</code>(<strong><code>df</code></strong>)</p>
+</blockquote>
+<p>Prepocesses the df to be ready for Anomaly Detection it will add start/end events to every trace</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="load_data" class="doc_header"><code>load_data</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L79" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>load_data</code>(<strong><code>data</code></strong>=<em><code>'PDC2016'</code></em>)</p>
+</blockquote>
+<p>loads eventlogs from different sources, returns event_df with start/end event, test_df and truth_df</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="TestModel" class="doc_header"><code>class</code> <code>TestModel</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L156" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>TestModel</code>(<strong><code>pp_data</code></strong>, <strong><code>is_cuda</code></strong>=<em><code>False</code></em>, <strong><code>vocab_col</code></strong>=<em><code>'activity'</code></em>) :: <code>Module</code></p>
+</blockquote>
+<p>Base class for all neural network modules.</p>
+<p>Your models should also subclass this class.</p>
+<p>Modules can also contain other Modules, allowing to nest them in
+a tree structure. You can assign the submodules as regular attributes::</p>
+
+<pre><code>import torch.nn as nn
+import torch.nn.functional as F
+
+class Model(nn.Module):
+    def __init__(self):
+        super(Model, self).__init__()
+        self.conv1 = nn.Conv2d(1, 20, 5)
+        self.conv2 = nn.Conv2d(20, 20, 5)
+
+    def forward(self, x):
+        x = F.relu(self.conv1(x))
+        return F.relu(self.conv2(x))
+
+</code></pre>
+<p>Submodules assigned in this way will be registered, and will have their
+parameters converted too when you call :meth:<code>to</code>, etc.</p>
+<p>:ivar training: Boolean represents whether this module is in training or
+                evaluation mode.
+:vartype training: bool</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="transform" class="doc_header"><code>class</code> <code>transform</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L182" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>transform</code>(<strong><code>enc</code></strong>=<em><code>None</code></em>, <strong><code>dec</code></strong>=<em><code>None</code></em>, <strong><code>split_idx</code></strong>=<em><code>None</code></em>, <strong><code>order</code></strong>=<em><code>None</code></em>) :: <code>ItemTransform</code></p>
+</blockquote>
+<p>A transform that always take tuples as items</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="windows_fast" class="doc_header"><code>windows_fast</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L189" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>windows_fast</code>(<strong><code>df</code></strong>, <strong><code>event_ids</code></strong>, <strong><code>ws</code></strong>=<em><code>5</code></em>, <strong><code>pad</code></strong>=<em><code>None</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="s1">&#39;PDC2020&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">directory</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;/mnt/data/jlahann/jupyterlab/fastpm/nbs/PDC data/&#39;</span><span class="o">+</span> <span class="n">data</span> <span class="o">+</span><span class="s1">&#39;/train&#39;</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">filename</span> <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span> <span class="k">if</span> <span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span><span class="s1">&#39;xes&#39;</span><span class="p">]</span>
+<span class="n">files</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">pick</span> <span class="o">=</span> <span class="n">randrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">))</span> <span class="c1">#picks random eventlog</span>
+
+<span class="n">log</span> <span class="o">=</span> <span class="n">xes_importer</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="s1">&#39;/mnt/data/jlahann/jupyterlab/fastpm/nbs/PDC data/&#39;</span><span class="o">+</span> <span class="n">data</span> <span class="o">+</span><span class="s1">&#39;/test/&#39;</span> <span class="o">+</span> <span class="n">files</span><span class="p">[</span><span class="n">pick</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">log_converter</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">log</span><span class="p">,</span> <span class="n">variant</span><span class="o">=</span><span class="n">log_converter</span><span class="o">.</span><span class="n">Variants</span><span class="o">.</span><span class="n">TO_DATA_FRAME</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;concept:name&quot;</span><span class="p">:</span> <span class="s2">&quot;activity&quot;</span><span class="p">,</span> <span class="s2">&quot;case:concept:name&quot;</span><span class="p">:</span> <span class="s2">&quot;trace_id&quot;</span><span class="p">})</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;trace_id&#39;</span><span class="p">]</span><span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;trace_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;activity&#39;</span><span class="p">,</span> <span class="s1">&#39;trace_id&#39;</span><span class="p">]]</span>
+<span class="n">event_df</span> <span class="o">=</span> <span class="n">df_preproc</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">event_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>event_id</th>
+      <th>activity</th>
+      <th>trace_id</th>
+    </tr>
+    <tr>
+      <th>trace_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>start</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>t11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>t26</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>t35</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>t62</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>31</td>
+      <td>t81</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>32</td>
+      <td>t75</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>33</td>
+      <td>t82</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>34</td>
+      <td>t91</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>35</td>
+      <td>end</td>
+      <td>1000</td>
+    </tr>
+  </tbody>
+</table>
+<p>25788 rows × 3 columns</p>
+</div>
 </div>
 
 </div>
@@ -74,27 +438,7 @@ nb_path: "00_utils.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f1score</span><span class="p">(</span><span class="n">truth</span><span class="p">,</span> <span class="n">classified</span><span class="p">):</span>
-    <span class="s1">&#39;Calculates F1 score given a list of the truth and classified values&#39;</span>
-    <span class="n">tp</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">truth</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">classified</span><span class="p">)))</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">truth</span><span class="p">)</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">classified</span><span class="p">)</span>
-    
-    <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-         <span class="n">precision</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">precision</span> <span class="o">=</span> <span class="n">tp</span><span class="o">/</span><span class="n">p</span>
-        
-    <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="n">recall</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">recall</span> <span class="o">=</span> <span class="n">tp</span><span class="o">/</span><span class="n">t</span>
-    
-    <span class="k">if</span> <span class="p">(</span><span class="n">precision</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">recall</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="n">f1</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">f1</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">precision</span><span class="o">*</span><span class="n">recall</span><span class="o">/</span><span class="p">(</span><span class="n">precision</span><span class="o">+</span><span class="n">recall</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">f1</span><span class="p">,</span> <span class="n">tp</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">p</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">event_df</span><span class="p">,</span> <span class="n">test_df</span><span class="p">,</span> <span class="n">df_truth</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s1">&#39;PDC2017&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -107,6 +451,16 @@ nb_path: "00_utils.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_truth</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -114,11 +468,133 @@ nb_path: "00_utils.ipynb"
 <div class="output_area">
 
 
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="df_preproc" class="doc_header"><code>df_preproc</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L40" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>df_preproc</code>(<strong><code>df</code></strong>)</p>
-</blockquote>
-<p>Prepocesses the df to be ready for Anomaly Detection it will add start and end eventsto every trace</p>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>case</th>
+      <th>normal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>16</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>19</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -132,13 +608,16 @@ nb_path: "00_utils.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
 </div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -146,24 +625,113 @@ nb_path: "00_utils.ipynb"
 <div class="output_area">
 
 
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="load_data" class="doc_header"><code>load_data</code><a href="https://github.com/{user}/anomaly/tree/{branch}/anomaly/utils.py#L72" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>load_data</code>(<strong><code>data</code></strong>=<em><code>'PDC2016'</code></em>)</p>
-</blockquote>
-<p>loads eventlogs from different sources, returns event_df with start/end event, test_df and truth_df</p>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>activity</th>
+      <th>trace_id</th>
+      <th>event_id</th>
+    </tr>
+    <tr>
+      <th>trace_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>t11</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>t21</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>t32</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>t26</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>t44</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>t76</td>
+      <td>1000</td>
+      <td>34486</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>t82</td>
+      <td>1000</td>
+      <td>34487</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>t71</td>
+      <td>1000</td>
+      <td>34488</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>t81</td>
+      <td>1000</td>
+      <td>34489</td>
+    </tr>
+    <tr>
+      <th>1000</th>
+      <td>t91</td>
+      <td>1000</td>
+      <td>34490</td>
+    </tr>
+  </tbody>
+</table>
+<p>34491 rows × 3 columns</p>
+</div>
 </div>
 
 </div>
 
 </div>
 </div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     {% endraw %}

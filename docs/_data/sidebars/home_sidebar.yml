@@ -12,6 +12,12 @@ entries:
     - output: web,pdf
       title: Utils
       url: utils.html
+    - output: web,pdf
+      title: Binet
+      url: binet.html
+    - output: web,pdf
+      title: Analyze
+      url: analyze.html
     output: web
     title: anomaly
   output: web

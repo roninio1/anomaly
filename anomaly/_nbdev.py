@@ -4,9 +4,14 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"f1score": "00_utils.ipynb",
          "df_preproc": "00_utils.ipynb",
-         "load_data": "00_utils.ipynb"}
+         "load_data": "00_utils.ipynb",
+         "TestModel": "00_utils.ipynb",
+         "transform": "00_utils.ipynb",
+         "windows_fast": "00_utils.ipynb",
+         "AnomalyDetection": "01_binet.ipynb"}
 
-modules = ["utils.py"]
+modules = ["utils.py",
+           "binet.py"]
 
 doc_url = "https://{user}.github.io/anomaly/"
 
